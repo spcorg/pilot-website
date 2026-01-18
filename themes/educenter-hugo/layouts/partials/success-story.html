@@ -1,21 +1,67 @@
 {{ $data := index site.Data site.Language.Lang }}
 
 {{ with $data.homepage.success_story }}
-<section class="section bg-cover" data-background="{{ .bg_image | absURL }}">
+<!-- Testimonials Cards -->
+<section class="section bg-light">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-6 col-sm-4 position-relative success-video">
-        <a class="play-btn venobox" href="{{ .video_link | safeURL }}" data-vbtype="video">
-          <i class="ti-control-play"></i>
-        </a>
-      </div>
-      <div class="col-lg-6 col-sm-8">
-        <div class="bg-white p-5">
-          <h2 class="section-title">{{ .title | markdownify }}</h2>
-          <p>{{ .content | markdownify }}</p>
+    <div class="text-center mb-5">
+      <h2 class="section-title">{{ .title | markdownify }}</h2>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="testimonial-wrapper" style="overflow: hidden; white-space: nowrap; padding: 20px 0;">
+      <div class="testimonial-track d-inline-flex" style="animation: scroll-left 30s linear infinite;">
+        {{ range .testimonials }}
+        <div class="testimonial-card bg-white p-4 mx-3 rounded shadow-sm d-flex flex-column" style="min-width: 350px; max-width: 350px; min-height: 220px; white-space: normal; display: inline-block; vertical-align: top;">
+          <p class="text-dark flex-grow-1" style="font-size: 1rem; line-height: 1.6;">{{ .quote }}</p>
+          <div class="d-flex align-items-center mt-auto pt-3">
+            <div class="testimonial-avatar mr-3" style="width: 50px; height: 50px; min-width: 50px; border-radius: 50%; overflow: hidden; flex-shrink: 0; background-color: #f0f0f0;">
+              <img src="{{ .image | absURL }}" alt="{{ .name }}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            </div>
+            <div>
+              <h6 class="mb-0 text-primary font-weight-bold">{{ .name }}</h6>
+              <small class="text-muted">{{ .title }}</small>
+            </div>
+          </div>
         </div>
+        {{ end }}
+        <!-- Duplicate for seamless loop -->
+        {{ range .testimonials }}
+        <div class="testimonial-card bg-white p-4 mx-3 rounded shadow-sm d-flex flex-column" style="min-width: 350px; max-width: 350px; min-height: 220px; white-space: normal; display: inline-block; vertical-align: top;">
+          <p class="text-dark flex-grow-1" style="font-size: 1rem; line-height: 1.6;">{{ .quote }}</p>
+          <div class="d-flex align-items-center mt-auto pt-3">
+            <div class="testimonial-avatar mr-3" style="width: 50px; height: 50px; min-width: 50px; border-radius: 50%; overflow: hidden; flex-shrink: 0; background-color: #f0f0f0;">
+              <img src="{{ .image | absURL }}" alt="{{ .name }}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            </div>
+            <div>
+              <h6 class="mb-0 text-primary font-weight-bold">{{ .name }}</h6>
+              <small class="text-muted">{{ .title }}</small>
+            </div>
+          </div>
+        </div>
+        {{ end }}
       </div>
     </div>
   </div>
 </section>
+<style>
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.testimonial-track:hover {
+  animation-play-state: paused;
+}
+.testimonial-card {
+  border: 1px solid #e8e8e8;
+  transition: box-shadow 0.3s ease;
+}
+.testimonial-card:hover {
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1) !important;
+}
+</style>
 {{ end }}

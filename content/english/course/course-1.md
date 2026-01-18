@@ -7,7 +7,7 @@ bg_image: "images/backgrounds/page-title.jpg"
 # meta description
 description : "Become a confident and fluent impromptu speaker in 6 weeks."
 # course thumbnail
-image: "images/courses/course-1.jpg"
+image: "images/courses/training-bg-5-Basic.png"
 # taxonomy
 category: "Public Speaking"
 # teacher

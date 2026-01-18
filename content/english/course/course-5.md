@@ -2,12 +2,14 @@
 title: "Pilot Project 3"
 date: 2025-06-06T15:27:17+06:00
 draft: false
+# course completed status
+completed: true
 # page title background image
 bg_image: "images/backgrounds/page-title.jpg"
 # meta description
 description : "Become a confident and fluent impromptu speaker in 6 weeks."
 # course thumbnail
-image: "images/courses/course-5.jpg"
+image: "images/courses/training-bg-2.png"
 # taxonomy
 category: "Public Speaking"
 # teacher

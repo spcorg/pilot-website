@@ -7,6 +7,10 @@
     </ul>
     <h4 class="card-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
     <p class="card-text mb-4">{{ .Summary | truncate 100 }}</p>
+    {{ if .Params.completed }}
+    <span class="btn btn-secondary btn-sm disabled" style="pointer-events: none; opacity: 0.6;">{{ i18n "completed" | default "Completed" }}</span>
+    {{ else }}
     <a href="{{ .Permalink }}" class="btn btn-primary btn-sm">{{ i18n "apply_now"}}</a>
+    {{ end }}
   </div>
 </div>

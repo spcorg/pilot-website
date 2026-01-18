@@ -2,12 +2,14 @@
 title: "Pilot Project 5 - Plus"
 date: 2025-10-06T15:27:17+06:00
 draft: false
+# course completed status
+completed: true
 # page title background image
 bg_image: "images/backgrounds/page-title.jpg"
 # meta description
 description : "Master your public speaking skills in 6 weeks."
 # course thumbnail
-image: "images/courses/course-2.jpg"
+image: "images/courses/training-bg-5-Plus.png"
 # taxonomy
 category: "Public Speaking"
 # teacher
