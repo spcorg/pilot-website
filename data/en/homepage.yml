@@ -1,0 +1,140 @@
+################################# Slider #####################################
+slider:
+  enable : true
+  bg_image : "images/banner/banner-1.jpg"
+  slider_item:
+    # slider item loop
+    - title : "Join Pilot Project – Personalized Coaching to Master Public Speaking"
+      content : "To change the world by empowering everyone to confidently and authentically express their story, opinion, and thinking — in any language."
+      animation_in : "left"
+      animation_out : "right"
+      # available animation : left, right, up, down
+      button:
+        enable : true
+        label : "Sign Up Now"
+        link : "contact/"
+
+    # slider item loop
+    - title : "Your Path to Success of Public Speaking"
+      content : "Personalized Feedback For Your Practice. High-quality and Intensive Coaching. Expert Mentors and AI Tool Assistant. Community Support and Networking."
+      animation_in : "left"
+      animation_out : "right"
+      # available animation : left, right, up, down
+      button:
+        enable : true
+        label : "Learn More"
+        link : "about/"
+
+    # slider item loop
+    - title : "Become a Confident and Fluent Speaker in 6 Weeks"
+      content : "Join our training camp and master your public speaking skills with expert guidance and inspiring community support."
+      animation_in : "left"
+      animation_out : "right"
+      # available animation : left, right, up, down
+      button:
+        enable : true
+        label : "Join Now"
+        link : "contact/"
+
+
+############################### Banner feature ###############################
+banner_feature:
+  enable : true
+  image : "images/banner/banner-feature.png"
+  feature_item:
+    # feature item loop
+    - name : "Successfully Coached"
+      icon : "ti-book" # icon pack : https://themify.me/themify-icons
+      content : "40+ speakers successfully coached through our personalized training programs"
+
+    # feature item loop
+    - name : "Personalized Classes"
+      icon : "ti-blackboard" # icon pack : https://themify.me/themify-icons
+      content : "20+ personalized classes completed with expert mentors and AI tool assistance"
+
+    # feature item loop
+    - name : "Satisfaction Rate"
+      icon : "ti-agenda" # icon pack : https://themify.me/themify-icons
+      content : "99% satisfaction rate from our mentees who transformed their public speaking skills"
+
+    # feature item loop
+    - name : "Active Community"
+      icon : "ti-write" # icon pack : https://themify.me/themify-icons
+      content : "100+ active speakers in our community supporting each other's growth"
+
+
+############################## about ##################################
+about:
+  enable : true
+  title : "About Pilot Project"
+  image : "images/about/about-us.jpg"
+  content : "To change the world by empowering everyone to confidently and authentically express their story, opinion, and thinking — in any language. Through personalized feedback, high-quality intensive coaching, expert mentors and AI tool assistance, and strong community support, we help you master public speaking skills. Our training program provides you with the techniques, mindset, and community to express yourself clearly and confidently in any situation."
+  button:
+    enable : true
+    label : "Learn more"
+    link : "about/"
+
+
+############################# Course ################################
+course:
+  enable : true
+  title : "Our Training Programs"
+  # course item comes from "content/**/course" folder.
+
+########################## Call to action ############################
+cta:
+  enable : true
+  subtitle : "Click to Join Our Training Camp"
+  title : "Join Pilot Project - Master Public Speaking in 6 Weeks"
+  button:
+    enable : true
+    label : "Sign Up Now"
+    link : "contact/"
+
+
+######################## Success story #############################
+success_story:
+  enable : true
+  bg_image : "images/backgrounds/success-story.jpg"
+  title : "Success Stories"
+  content : "Provide people with the techniques, mindset, and community to express themselves clearly and confidently. From fear to fluency — Pilot Project empowers mentees to shine in impromptu speaking. Through 21 days of practice, participants gain habits, growth, and the courage to lead. The expert guidance and inspiring community makes this an unforgettable learning journey. Thanks to Pilot Project, our graduates no longer fear the stage — they embrace it with confidence."
+  # video link
+  video_link : "https://www.youtube.com/watch?v=ResipmZmpDU"
+
+
+############################# event ################################
+event:
+  enable : true
+  title : "Upcoming Training Events"
+  # event item comes from "content/**/event" folder.
+
+  
+########################### funfacts ############################
+funfacts:
+  enable : true
+  funfact_item:
+    # funfact item loop
+    - name : "MENTORS"
+      count : "10"
+
+    # funfact item loop
+    - name : "TRAINING CAMPS"
+      count : "5"
+
+    # funfact item loop
+    - name : "PARTICIPANTS"
+      count : "150"
+
+    # funfact item loop
+    - name : "SATISFACTION RATE"
+      count : "99"
+
+# funfact is for about page
+
+
+
+############################# blog ################################
+blog:
+  enable : true
+  title : "Latest News"
+  # blog item comes from "content/**/blog" folder.
